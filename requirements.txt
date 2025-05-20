@@ -1,0 +1,7 @@
+aiogram==3.0.0
+psycopg2-binary==2.9.6  # ou a versão que preferir
+requests==2.28.1  # Adicionado para realização de requisições HTTP
+
+
+API_TOKEN = '8104348521:AAHPhuf7ah6-9OXqiCRYnwkd4-L-4SKHGZ8'
+PUSHINPAY_TOKEN = '14846|lSNah5VzArLVCxM8411PN3xoybuxi9n25TAM8YjX71eabff4'

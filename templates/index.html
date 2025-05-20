@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Planos</title>
+</head>
+<body>
+    <h1>Adicionar Plano</h1>
+    <form method="post">
+        <input type="text" name="name" placeholder="Nome do Plano" required>
+        <input type="number" name="price" placeholder="Preço" required>
+        <input type="number" name="length" placeholder="Duração em dias" required>
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <h2>Planos Existentes</h2>
+    <ul>
+        {% for plano in planos %}
+            <li>{{ plano.name }} - R$ {{ plano.price }} por {{ plano.length }} dias</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
